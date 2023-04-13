@@ -33,3 +33,14 @@ Typically this involves copying the /boot* directory and /lib/modules/\<kernel n
 * JetPack 4.4 DP
 * Tested on Jetson Xavier NX
 
+## For ADVenTech SSD Model
+Storage Device changed: nvme0n1p1 to sda1.
+
+Fixed some service code for waiting SCSI device is up.
+
+Before you run the scripts above here,
+- Flash Jetson Linux (with out SDK Components and others) with SDK Manager
+- Reboot 
+- make new gpt partition for /dev/sda and make ext4 fs for that 
+- Run scripts 
+- Install Jetpack and SDK Components + DeepStream
